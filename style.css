@@ -1,0 +1,50 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to right, orange, pink);
+  height: 100vh;
+}
+
+.container {
+  width: 100%;
+  min-height: 900px;
+  height: 100vh;
+}
+
+.eyes {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  background: #000;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.eye {
+  width: 240px;
+  height: 120px;
+  border-radius: 50%;
+  background: #fff;
+  margin: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.ball {
+  width: 40px;
+  aspect-ratio: 1;
+  background: #000;
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
